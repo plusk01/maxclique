@@ -1,0 +1,12 @@
+from setuptools import setup
+
+setup(
+    name='maxclique',
+    version='${PROJECT_VERSION}',
+    author='Parker Lusk',
+    author_email='plusk@mit.edu',
+    description='Bindings for Parallel Maximum Clique (PMC) library',
+    package_dir={'': '${CMAKE_CURRENT_BINARY_DIR}'},
+    packages=['maxclique'],
+    package_data={'': ['*.so']}
+)
